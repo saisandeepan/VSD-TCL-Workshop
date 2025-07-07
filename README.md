@@ -97,7 +97,7 @@ set early cell library, late cell library path using read_lib.proc
 
 set verilog path (final synthesis netlist to be read into OpenTimer) using read_verilog.proc
 
-Using read_sdc.proc we convert the sdc file we ceated earlier into timing file readable by OpenTimer. This proc extracts the port name, clock period, duty cycle, input and output delays. It converts the bussed ports into bit blasted ports
+Using read_sdc.proc we convert the sdc file we made earlier into timing file readable by OpenTimer. This proc extracts the port name, clock period, duty cycle, input and output delays. It converts the bussed ports into bit blasted ports
 
 From
 ![Screenshot (830)](https://github.com/user-attachments/assets/0a61a166-7114-4b86-9ed4-af8733490d11)
@@ -107,6 +107,15 @@ To
 
 
 
+We create a mock spef file to give as input to the OpenTimer tool
+
+![Screenshot (834)](https://github.com/user-attachments/assets/4cdef6f6-8bfc-4eed-b1ce-74928b18789d)
+
+We then append a set of commands to the conf to carry out STA using the cell libraries, final synth netlist, timing file and spef file.
+
+Conf file:
+
+![Screenshot (835)](https://github.com/user-attachments/assets/0c84c34b-ed24-4e06-8a9a-a9cfcd80655a)
 
 
 
