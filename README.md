@@ -91,15 +91,24 @@ Now, it's time for Static Timing Analysis
 ![Screenshot (832)](https://github.com/user-attachments/assets/b48790db-ff19-4d52-b769-a7ea955de130)
 
 
-We change the output log from Stdout to conf file using proc reopenStdout.proc
+We change the output log from Stdout to conf file using proc reopenStdout.proc:
 
-set multi cpu usage with desired number of thread using set_num_threads.proc
-![Screenshot (833)](https://github.com/user-attachments/assets/cfdf819c-cac5-44f2-ab83-91837eeaa408)
+![Screenshot (857)](https://github.com/user-attachments/assets/20ffa1a8-26b7-4f1c-af21-41fd5a26ab74)
+
+
+set multi cpu usage with desired number of thread using set_num_threads.proc:
+![Screenshot (860)](https://github.com/user-attachments/assets/bf8f8063-cb8f-4498-8aa9-f1b9cf39e629)
 
 
 set early cell library, late cell library path using read_lib.proc
 
+![Screenshot (858)](https://github.com/user-attachments/assets/27c75d6a-21c4-4448-ae9d-eb35d0ca44e1)
+
+
 set verilog path (final synthesis netlist to be read into OpenTimer using read_verilog.proc
+
+![Screenshot (859)](https://github.com/user-attachments/assets/2065e913-f287-42c7-891a-b5dcd23d688e)
+
 
 Using read_sdc.proc we convert the sdc file we made earlier into timing file readable by OpenTimer. This proc extracts the port name, clock period, duty cycle, input and output delays. It converts the bussed ports into bit blasted ports
 
@@ -110,6 +119,11 @@ From
 To
 
 ![Screenshot (831)](https://github.com/user-attachments/assets/64e7d14a-64f5-440c-8ebe-740f1df505ff)
+
+read_sdc.proc:
+
+![Screenshot (856)](https://github.com/user-attachments/assets/9e9cb012-d357-4e97-ac12-941875d8392b)
+
 
 return the output log to stdout using reopenStdout /dev/tty
 
@@ -147,6 +161,9 @@ And finally, format and print the prelayout timing results in a horizontally
 Final Output:
 
 ![Screenshot (841)](https://github.com/user-attachments/assets/a02056e6-e60e-440d-8b39-83167378a4e3)
+
+![Screenshot (861)](https://github.com/user-attachments/assets/18d523fe-8a14-4c1b-8312-66f2913dca3e)
+
 
 CONCLUSION
 
