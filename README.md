@@ -81,9 +81,9 @@ Upon executing this script in Yosys tool, the tool performs synthesis and writes
 ![Screenshot (826)](https://github.com/user-attachments/assets/d50e11cd-e438-4af4-b5bb-375b1c8a4d64)
 
 We need to perform Static Timing Analysis on this netlist using the OpenTimer tool. 
-So we replace the "\\" characters from the Yosys generated synthesis netlist with empty string "" to make it compatible with OpenTimer.
+So we replace the "\\\\" characters from the Yosys generated synthesis netlist with empty string "" to make it compatible with OpenTimer.
 
-![Screenshot (824)](https://github.com/user-attachments/assets/a181253b-8f86-4a66-bdb6-61947f43a82c)
+![Screenshot (862)](https://github.com/user-attachments/assets/49335264-3d2c-4010-a234-240903fc7f46)
 
 
 Now, it's time for Static Timing Analysis
