@@ -138,5 +138,10 @@ Extract key information from results - Time taken, worst output violation, numbe
 
 ![Screenshot (838)](https://github.com/user-attachments/assets/cba03aad-7007-4092-9915-f05a91c0eac7)
 
-![Screenshot (839)](https://github.com/user-attachments/assets/cc07a90d-6b21-4276-89db-d0c7752360da)
+![image](https://github.com/user-attachments/assets/205329b5-66b0-4d35-9448-073988872d23)
+
+And finally, format and print the prelayout timing results in a horizontally
+
+![Screenshot (840)](https://github.com/user-attachments/assets/848281a6-8208-4b7c-9fc6-f701ce9f05ff)
+
 
