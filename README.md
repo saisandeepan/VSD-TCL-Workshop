@@ -20,7 +20,7 @@ TCL code to extract the list of input variables from csv:
 
 ![Screenshot (809)](https://github.com/user-attachments/assets/820924be-6cef-4f33-beac-b2cd2349c4d9)
 
-Checks to see if files are present in the paths mentioned in csv:
+Checks to see if the paths mentioned in csv are present:
 
 ![Screenshot (810)](https://github.com/user-attachments/assets/6d7d9778-acb3-47de-93a2-5421cd90384e)
 
