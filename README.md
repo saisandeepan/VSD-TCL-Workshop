@@ -1,4 +1,4 @@
-# VSD-TCL-Workshop
+![Screenshot (820)](https://github.com/user-attachments/assets/c122198f-42f2-4a6f-aef0-bdf4bc4d4890)# VSD-TCL-Workshop
 
 This repository contains my learnings from the TCL programming workshop conducted by VLSI System Design.
 
@@ -35,7 +35,14 @@ Formatting clock constraints:
 ![Screenshot (811)](https://github.com/user-attachments/assets/dad87765-02ed-445e-8876-74453b7f20ce)
 
 Formatting input constraints:
+It is important to identify bussed IO ports with suffix "*" in the sdc file 
 ![Screenshot (812)](https://github.com/user-attachments/assets/a743049b-e1c4-4d53-ab45-9d3e457135b8)
 
- 
+ ![Screenshot (818)](https://github.com/user-attachments/assets/dbced72d-2380-4f8b-aa70-0d70ec8b8f03)
+
+Similarly, formatting output constraints:
+
+![Screenshot (819)](https://github.com/user-attachments/assets/5193a9bd-7bec-439f-a11f-0075dc42d035)
+
+![Screenshot (820)](https://github.com/user-attachments/assets/e4ec68d6-1b95-462a-aac6-7d4f92e658b9)
 
