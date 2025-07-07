@@ -57,4 +57,10 @@ Resulting hier.ys
 
 ![Screenshot (822)](https://github.com/user-attachments/assets/b639345a-aed4-41b2-a100-be8ca60563c4)
 
+Hierarchy pass in yosys hierarchy check log:
+
+![Screenshot (823)](https://github.com/user-attachments/assets/940cc5c2-27e4-4726-8946-c4f44cd62763)
+
+
+
 
