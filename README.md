@@ -154,7 +154,7 @@ Extract key information from results - Time taken, worst output violation, numbe
 
 ![image](https://github.com/user-attachments/assets/205329b5-66b0-4d35-9448-073988872d23)
 
-And finally, format and print the prelayout timing results in a horizontally
+And finally, format and print the prelayout timing results horizontally
 
 ![Screenshot (840)](https://github.com/user-attachments/assets/848281a6-8208-4b7c-9fc6-f701ce9f05ff)
 
