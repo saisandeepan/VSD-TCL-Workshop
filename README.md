@@ -61,6 +61,23 @@ Hierarchy pass in yosys hierarchy check log:
 
 ![Screenshot (823)](https://github.com/user-attachments/assets/940cc5c2-27e4-4726-8946-c4f44cd62763)
 
+DAY 5
+
+Now, we make the main synthesis script script to be executed in Yosys:
+
+![Screenshot (824)](https://github.com/user-attachments/assets/e9b58a60-82b3-44c8-bd18-73b5c611afb6)
+
+Resulting ys file:
+
+![Screenshot (825)](https://github.com/user-attachments/assets/89f17baf-dc5d-4da0-8550-e99445ec5be9)
+
+
+Upon executing this script in Yosys tool, the tool performs synthesis and write out a verilog netlist
+
+![Screenshot (826)](https://github.com/user-attachments/assets/d50e11cd-e438-4af4-b5bb-375b1c8a4d64)
+
+
+
 
 
 
