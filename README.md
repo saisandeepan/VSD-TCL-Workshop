@@ -67,7 +67,7 @@ Hierarchy pass in yosys hierarchy check log:
 
 DAY 5
 
-Now, we make the main synthesis script script to be executed in Yosys:
+Now, we make the main synthesis script to be executed in Yosys:
 
 ![Screenshot (824)](https://github.com/user-attachments/assets/e9b58a60-82b3-44c8-bd18-73b5c611afb6)
 
