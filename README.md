@@ -3,6 +3,7 @@
 This repository contains my learnings from the TCL programming workshop conducted by VLSI System Design.
 
 DAY 1
+
 The aim of the workshop is to write a TCL script that processes the synthesis collaterals of a design and gives us the prelayout timing results as output.
 
 Below is the csv file that contains the path to the input files needed for synthesis
@@ -14,6 +15,7 @@ Using the csv file as arg, the shell script to invoke the TCL script:
 ![Screenshot (807)](https://github.com/user-attachments/assets/cc78cc4f-6612-4e6f-a085-fddc7ceda121)
 
 DAY2
+
 TCL code to extract the list of input variables from csv:
 
 ![Screenshot (809)](https://github.com/user-attachments/assets/820924be-6cef-4f33-beac-b2cd2349c4d9)
@@ -23,6 +25,7 @@ Checks to see if the paths mentioned in csv are present:
 ![Screenshot (810)](https://github.com/user-attachments/assets/6d7d9778-acb3-47de-93a2-5421cd90384e)
 
 DAY 3
+
 We need to convert the constraints file into sdc format (Synopsys Design Constraints)
 
 From   
@@ -41,6 +44,7 @@ It is important to identify bussed IO ports with suffix "*" in the sdc file
  ![Screenshot (818)](https://github.com/user-attachments/assets/dbced72d-2380-4f8b-aa70-0d70ec8b8f03)
 
 DAY 4
+
 Similarly, formatting output constraints:
 
 ![Screenshot (819)](https://github.com/user-attachments/assets/5193a9bd-7bec-439f-a11f-0075dc42d035)
@@ -87,7 +91,7 @@ Now, it's time for Static Timing Analysis
 ![Screenshot (832)](https://github.com/user-attachments/assets/b48790db-ff19-4d52-b769-a7ea955de130)
 
 
-We change the output log from Stdout to conf file using proc reOpenStdout.proc
+We change the output log from Stdout to conf file using proc reopenStdout.proc
 
 set multi cpu usage with desired number of thread using set_num_threads.proc
 ![Screenshot (833)](https://github.com/user-attachments/assets/cfdf819c-cac5-44f2-ab83-91837eeaa408)
@@ -95,17 +99,19 @@ set multi cpu usage with desired number of thread using set_num_threads.proc
 
 set early cell library, late cell library path using read_lib.proc
 
-set verilog path (final synthesis netlist to be read into OpenTimer) using read_verilog.proc
+set verilog path (final synthesis netlist to be read into OpenTimer using read_verilog.proc
 
 Using read_sdc.proc we convert the sdc file we made earlier into timing file readable by OpenTimer. This proc extracts the port name, clock period, duty cycle, input and output delays. It converts the bussed ports into bit blasted ports
 
 From
+
 ![Screenshot (830)](https://github.com/user-attachments/assets/0a61a166-7114-4b86-9ed4-af8733490d11)
 
 To
+
 ![Screenshot (831)](https://github.com/user-attachments/assets/64e7d14a-64f5-440c-8ebe-740f1df505ff)
 
-
+return the output log to stdout using reopenStdout /dev/tty
 
 We create a mock spef file to give as input to the OpenTimer tool
 
@@ -117,6 +123,22 @@ Conf file:
 
 ![Screenshot (835)](https://github.com/user-attachments/assets/0c84c34b-ed24-4e06-8a9a-a9cfcd80655a)
 
+
+Now execute the conf file in OpenTimer and direct the output into a results file
+
+![image](https://github.com/user-attachments/assets/3deaed29-9b8c-421f-b8a9-b324dbf68185)
+
+results file:
+
+![Screenshot (836)](https://github.com/user-attachments/assets/89ebb8f3-e604-4a18-bee8-aba70d431dc4)
+
+Extract key information from results - Time taken, worst output violation, number of output violations, worst setup violation, number of setup violations, worst hold violation, nummber of hold violations and number of instances
+
+![Screenshot (837)](https://github.com/user-attachments/assets/68ea57ce-78c2-4342-88b4-2df35a7b17f0)
+
+![Screenshot (838)](https://github.com/user-attachments/assets/cba03aad-7007-4092-9915-f05a91c0eac7)
+
+![Screenshot (839)](https://github.com/user-attachments/assets/cc07a90d-6b21-4276-89db-d0c7752360da)
 
 
 
