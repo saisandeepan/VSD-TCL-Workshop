@@ -76,7 +76,7 @@ Resulting ys file:
 ![Screenshot (825)](https://github.com/user-attachments/assets/89f17baf-dc5d-4da0-8550-e99445ec5be9)
 
 
-Upon executing this script in Yosys tool, the tool performs synthesis and write out a verilog netlist
+Upon executing this script in Yosys tool, the tool performs synthesis and writes out a verilog netlist
 
 ![Screenshot (826)](https://github.com/user-attachments/assets/d50e11cd-e438-4af4-b5bb-375b1c8a4d64)
 
@@ -139,12 +139,5 @@ Extract key information from results - Time taken, worst output violation, numbe
 ![Screenshot (838)](https://github.com/user-attachments/assets/cba03aad-7007-4092-9915-f05a91c0eac7)
 
 ![Screenshot (839)](https://github.com/user-attachments/assets/cc07a90d-6b21-4276-89db-d0c7752360da)
-
-
-
-
-
-
-
 
 
