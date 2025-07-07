@@ -1,4 +1,4 @@
-![Screenshot (820)](https://github.com/user-attachments/assets/c122198f-42f2-4a6f-aef0-bdf4bc4d4890)# VSD-TCL-Workshop
+# VSD-TCL-Workshop
 
 This repository contains my learnings from the TCL programming workshop conducted by VLSI System Design.
 
