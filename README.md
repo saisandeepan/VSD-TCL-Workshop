@@ -144,4 +144,13 @@ And finally, format and print the prelayout timing results in a horizontally
 
 ![Screenshot (840)](https://github.com/user-attachments/assets/848281a6-8208-4b7c-9fc6-f701ce9f05ff)
 
+Final Output:
 
+![Screenshot (841)](https://github.com/user-attachments/assets/a02056e6-e60e-440d-8b39-83167378a4e3)
+
+CONCLUSION
+
+>During the workshop, I gained an in-depth understanding of TCL programming by working extensively with conditions, loops, strings, lists, and matrices and implementing custom functions using procs
+>Understood how TCL is used in various VLSI flows such as synthesis and static timing analysis (STA), along with the role of input and output files in these flows.
+
+THANK YOU!!
