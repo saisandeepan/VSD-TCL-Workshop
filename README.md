@@ -140,4 +140,3 @@ Extract key information from results - Time taken, worst output violation, numbe
 
 ![Screenshot (839)](https://github.com/user-attachments/assets/cc07a90d-6b21-4276-89db-d0c7752360da)
 
-
