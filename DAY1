@@ -1,9 +1,0 @@
-The aim of the workshop is to write a TCL script that processes the synthesis collaterals of a design and gives us the prelayout timing results as output.
-
-Below is the csv file that contains the path to the input files needed for synthesis
-
-![Screenshot (808)](https://github.com/user-attachments/assets/fbabf856-8bbd-4a30-9474-34ccfd0768c8)
-
-Using the csv file as arg, the shell script to invoke the TCL script:
-
-![Screenshot (807)](https://github.com/user-attachments/assets/cc78cc4f-6612-4e6f-a085-fddc7ceda121)
