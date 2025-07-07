@@ -2,7 +2,7 @@
 
 This repository contains my learnings from the TCL programming workshop conducted by VLSI System Design.
 
-The aim of the workshop is to create a TCL script that processes the synthesis collaterals of a design and gives us the prelayout timing results as output.
+The aim of the workshop is to write a TCL script that processes the synthesis collaterals of a design and gives us the prelayout timing results as output.
 
 DAY1
 
@@ -24,7 +24,7 @@ Checks to see if the paths mentioned in csv are present:
 
 ![Screenshot (810)](https://github.com/user-attachments/assets/6d7d9778-acb3-47de-93a2-5421cd90384e)
 
-We need to convert the constraints file into sdc format understadable by the synthesis tool - Yosys
+We need to convert the constraints file into sdc format (Synopsys Design Constraints)
 
 From   
                                         ![Screenshot (813)](https://github.com/user-attachments/assets/146d0dd7-3d50-4cc7-bacf-abafb9d41c26)
@@ -75,6 +75,37 @@ Resulting ys file:
 Upon executing this script in Yosys tool, the tool performs synthesis and write out a verilog netlist
 
 ![Screenshot (826)](https://github.com/user-attachments/assets/d50e11cd-e438-4af4-b5bb-375b1c8a4d64)
+
+We need to perform Static Timing Analysis on this netlist using the OpenTimer tool. 
+So we replace the "\\" characters from the Yosys generated synthesis netlist with empty string "" to make it compatible with OpenTimer.
+
+![Screenshot (824)](https://github.com/user-attachments/assets/a181253b-8f86-4a66-bdb6-61947f43a82c)
+
+
+Now, it's time for Static Timing Analysis
+
+![Screenshot (832)](https://github.com/user-attachments/assets/b48790db-ff19-4d52-b769-a7ea955de130)
+
+
+We change the output log from Stdout to conf file using proc reOpenStdout.proc
+
+set multi cpu usage with desired number of thread using set_num_threads.proc
+![Screenshot (833)](https://github.com/user-attachments/assets/cfdf819c-cac5-44f2-ab83-91837eeaa408)
+
+
+set early cell library, late cell library path using read_lib.proc
+
+set verilog path (final synthesis netlist to be read into OpenTimer) using read_verilog.proc
+
+Using read_sdc.proc we convert the sdc file we ceated earlier into timing file readable by OpenTimer. This proc extracts the port name, clock period, duty cycle, input and output delays. It converts the bussed ports into bit blasted ports
+
+From
+![Screenshot (830)](https://github.com/user-attachments/assets/0a61a166-7114-4b86-9ed4-af8733490d11)
+
+To
+![Screenshot (831)](https://github.com/user-attachments/assets/64e7d14a-64f5-440c-8ebe-740f1df505ff)
+
+
 
 
 
