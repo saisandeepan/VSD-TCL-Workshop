@@ -24,7 +24,8 @@ Checks to see if the paths mentioned in csv are present:
 
 ![Screenshot (810)](https://github.com/user-attachments/assets/6d7d9778-acb3-47de-93a2-5421cd90384e)
 
-We need to convert the constraints file into sdc format understadable by Yosys tool
+We need to convert the constraints file into sdc format understadable by the synthesis tool - Yosys
+
 From   
                                         ![Screenshot (813)](https://github.com/user-attachments/assets/146d0dd7-3d50-4cc7-bacf-abafb9d41c26)
 To
@@ -45,4 +46,15 @@ Similarly, formatting output constraints:
 ![Screenshot (819)](https://github.com/user-attachments/assets/5193a9bd-7bec-439f-a11f-0075dc42d035)
 
 ![Screenshot (820)](https://github.com/user-attachments/assets/e4ec68d6-1b95-462a-aac6-7d4f92e658b9)
+
+We then create a hierarchy check script to be used by Yosys to verify that all RTL modules referenced in the Top module are defined properly and available for synthesis
+
+TCL code to make hierarchy check script:
+
+![Screenshot (821)](https://github.com/user-attachments/assets/f521d200-6e9b-4359-9bec-08e5b9ca4cdf)
+
+Resulting hier.ys 
+
+![Screenshot (822)](https://github.com/user-attachments/assets/b639345a-aed4-41b2-a100-be8ca60563c4)
+
 
