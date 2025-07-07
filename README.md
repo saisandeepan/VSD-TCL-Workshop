@@ -2,9 +2,8 @@
 
 This repository contains my learnings from the TCL programming workshop conducted by VLSI System Design.
 
+DAY 1
 The aim of the workshop is to write a TCL script that processes the synthesis collaterals of a design and gives us the prelayout timing results as output.
-
-DAY1
 
 Below is the csv file that contains the path to the input files needed for synthesis
 
@@ -15,7 +14,6 @@ Using the csv file as arg, the shell script to invoke the TCL script:
 ![Screenshot (807)](https://github.com/user-attachments/assets/cc78cc4f-6612-4e6f-a085-fddc7ceda121)
 
 DAY2
-
 TCL code to extract the list of input variables from csv:
 
 ![Screenshot (809)](https://github.com/user-attachments/assets/820924be-6cef-4f33-beac-b2cd2349c4d9)
@@ -24,6 +22,7 @@ Checks to see if the paths mentioned in csv are present:
 
 ![Screenshot (810)](https://github.com/user-attachments/assets/6d7d9778-acb3-47de-93a2-5421cd90384e)
 
+DAY 3
 We need to convert the constraints file into sdc format (Synopsys Design Constraints)
 
 From   
@@ -41,6 +40,7 @@ It is important to identify bussed IO ports with suffix "*" in the sdc file
 
  ![Screenshot (818)](https://github.com/user-attachments/assets/dbced72d-2380-4f8b-aa70-0d70ec8b8f03)
 
+DAY 4
 Similarly, formatting output constraints:
 
 ![Screenshot (819)](https://github.com/user-attachments/assets/5193a9bd-7bec-439f-a11f-0075dc42d035)
@@ -111,11 +111,14 @@ We create a mock spef file to give as input to the OpenTimer tool
 
 ![Screenshot (834)](https://github.com/user-attachments/assets/4cdef6f6-8bfc-4eed-b1ce-74928b18789d)
 
-We then append a set of commands to the conf to carry out STA using the cell libraries, final synth netlist, timing file and spef file.
+Then we append a set of commands to the conf file to carry out STA using the cell libraries, final synth netlist, timing file and spef file.
 
 Conf file:
 
 ![Screenshot (835)](https://github.com/user-attachments/assets/0c84c34b-ed24-4e06-8a9a-a9cfcd80655a)
+
+
+
 
 
 
