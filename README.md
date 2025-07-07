@@ -150,7 +150,8 @@ Final Output:
 
 CONCLUSION
 
->During the workshop, I gained an in-depth understanding of TCL programming by working extensively with conditions, loops, strings, lists, and matrices and implementing custom functions using procs
->Understood how TCL is used in various VLSI flows such as synthesis and static timing analysis (STA), along with the role of input and output files in these flows.
+During the workshop, I gained an in-depth understanding of TCL programming by working extensively with conditions, loops, strings, lists, and matrices and implementing custom functions using procs.
+
+Understood how TCL is used in various VLSI flows such as synthesis and static timing analysis (STA), along with the role of input and output files in these flows.
 
 THANK YOU!!
